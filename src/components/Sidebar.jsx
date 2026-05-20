@@ -1,22 +1,20 @@
 function Sidebar() {
   return (
-    <div
-      style={{
-        width: "200px",
-        background: "#2c3e50",
-        color: "white",
-        minHeight: "100vh",
-        padding: "20px",
-      }}
-    >
-      <h2>MENU</h2>
+    <aside className="sidebar">
 
-      <p>Dashboard</p>
-      <p>Students</p>
-      <p>Courses</p>
-      <p>Settings</p>
-    </div>
-  );
+      <div className="logo">
+        STUDENT PORTAL
+      </div>
+
+      <ul>
+        <li className="active">Dashboard</li>
+        <li>Students</li>
+        <li>Courses</li>
+        <li>Profile</li>
+      </ul>
+
+    </aside>
+  )
 }
 
-export default Sidebar;
+export default Sidebar

@@ -1,36 +1,24 @@
 function Dashboard() {
   return (
-    <div
-      style={{
-        display: "flex",
-        gap: "20px",
-        marginTop: "20px",
-        marginBottom: "20px",
-      }}
-    >
-      <div style={cardStyle}>
-        <h3>500</h3>
-        <p>Total Students</p>
+    <section className="dashboard">
+
+      <div className="card">
+        <h3>Total Students</h3>
+        <h1>150</h1>
       </div>
 
-      <div style={cardStyle}>
-        <h3>20</h3>
-        <p>Courses</p>
+      <div className="card">
+        <h3>Total Courses</h3>
+        <h1>10</h1>
       </div>
 
-      <div style={cardStyle}>
-        <h3>150</h3>
-        <p>Enrolled</p>
+      <div className="card">
+        <h3>Active Users</h3>
+        <h1>95</h1>
       </div>
-    </div>
-  );
+
+    </section>
+  )
 }
 
-const cardStyle = {
-  background: "#ecf0f1",
-  padding: "20px",
-  width: "150px",
-  borderRadius: "10px",
-};
-
-export default Dashboard;
+export default Dashboard

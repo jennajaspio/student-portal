@@ -1,57 +1,45 @@
-function StudentTable() {
-  const students = [
-    {
-      id: "2025-001",
-      name: "Juan Dela Cruz",
-      course: "BSIT",
-    },
-    {
-      id: "2025-002",
-      name: "Maria Santos",
-      course: "BSCS",
-    },
-  ];
-
+function StudentTable({ students }) {
   return (
-    <div>
-      <h2>Student Table</h2>
+    <section className="table-section">
 
-      <table border="1" cellPadding="10" width="100%">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Course</th>
-            <th>Action</th>
-          </tr>
-        </thead>
+      <div className="table-header">
 
-        <tbody>
-          {students.map((student) => (
-            <tr key={student.id}>
-              <td>{student.id}</td>
-              <td>{student.name}</td>
-              <td>{student.course}</td>
+        <h2>Student Records</h2>
 
-              <td>
-                <button
-                  onClick={() => alert("Edit clicked")}
-                >
-                  Edit
-                </button>
+        <div className="search-bar">
+          <input type="text" placeholder="Search student..." />
+        </div>
 
-                <button
-                  onClick={() => alert("Delete clicked")}
-                >
-                  Delete
-                </button>
-              </td>
+      </div>
+
+      <div className="table-container">
+
+        <table>
+
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Full Name</th>
+              <th>Course</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
+          </thead>
+
+          <tbody>
+            {students.map((student) => (
+              <tr key={student.id}>
+                <td>{student.id}</td>
+                <td>{student.name}</td>
+                <td>{student.course}</td>
+              </tr>
+            ))}
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+  )
 }
 
-export default StudentTable;
+export default StudentTable

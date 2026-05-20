@@ -1,11 +1,14 @@
 function Header() {
   return (
-    <div>
-      <h1>Student Management System</h1>
-      <p>Student Information</p>
-      <hr />
-    </div>
-  );
+    <header className="header">
+
+      <div className="header-text">
+        <h1>Student Management Portal</h1>
+        <p>Student Information System</p>
+      </div>
+
+    </header>
+  )
 }
 
-export default Header;
+export default Header
