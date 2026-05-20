@@ -202,32 +202,32 @@ table tr:hover{
   display:grid;
   grid-template-columns:repeat(2, 1fr);
   gap:15px;
-
-  /* center inside container */
   width:100%;
   max-width:750px;
 }
 
-/* inputs */
 .student-form input{
   width:100%;
   padding:13px;
-  border:1px solid #ddd;
+  border:1px solid #dcdcdc;
   border-radius:10px;
   outline:none;
   font-size:14px;
+  background:white;
+  color:#333;
 }
 
 /* button full width */
 .student-form button{
   grid-column: span 2;
-  background:#145214;
+  background:#1b6b1b;
   color:white;
   border:none;
   padding:13px;
   border-radius:10px;
   cursor:pointer;
   font-size:14px;
+  font-weight:500;
   transition:0.3s;
 }
 

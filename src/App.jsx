@@ -9,13 +9,28 @@ function App() {
   const students = [
     {
       id: "2025-001",
-      name: "Juan Dela Cruz",
+      name: "Laila Mea Almanzor",
       course: "BSIT",
     },
     {
       id: "2025-002",
-      name: "Maria Santos",
+      name: "Joyce Ann Francisco",
       course: "BSCS",
+    },
+    {
+      id: "2025-003",
+      name: "Jenna Jaspio",
+      course: "BSIT",
+    },
+    {
+      id: "2025-004",
+      name: "Glen Lim",
+      course: "BSIT",
+    },
+    {
+      id: "2025-005",
+      name: "Jed Aeron Torres",
+      course: "BSIT",
     },
   ];
 
