@@ -1,21 +1,16 @@
+import SearchBar from "./SearchBar";
+
 function StudentTable({ students }) {
   return (
     <section className="table-section">
-
       <div className="table-header">
-
         <h2>Student Records</h2>
 
-        <div className="search-bar">
-          <input type="text" placeholder="Search student..." />
-        </div>
-
+        <SearchBar />
       </div>
 
       <div className="table-container">
-
         <table>
-
           <thead>
             <tr>
               <th>ID</th>
@@ -33,13 +28,10 @@ function StudentTable({ students }) {
               </tr>
             ))}
           </tbody>
-
         </table>
-
       </div>
-
     </section>
-  )
+  );
 }
 
-export default StudentTable
+export default StudentTable;

@@ -2,21 +2,35 @@ import "./App.css";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import Dashboard from "./components/Dashboard";
-import SearchBar from "./components/SearchBar";
 import StudentTable from "./components/StudentTable";
 import StudentForm from "./components/StudentForm";
 
 function App() {
+  const students = [
+    {
+      id: "2025-001",
+      name: "Juan Dela Cruz",
+      course: "BSIT",
+    },
+    {
+      id: "2025-002",
+      name: "Maria Santos",
+      course: "BSCS",
+    },
+  ];
+
   return (
-    <div style={{ display: "flex", fontFamily: "Arial" }}>
+    <div className="container">
       <Sidebar />
 
-      <div style={{ flex: 1, padding: "20px" }}>
+      <div className="content">
         <Header />
-        <Dashboard />
-        <SearchBar />
-        <StudentTable />
-        <StudentForm />
+
+        <div className="page-content">
+          <Dashboard />
+          <StudentTable students={students} />
+          <StudentForm />
+        </div>
       </div>
     </div>
   );

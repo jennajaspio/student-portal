@@ -1,14 +1,7 @@
 function SearchBar() {
   return (
-    <div style={{ marginBottom: "20px" }}>
-      <input
-        type="text"
-        placeholder="Search student..."
-        style={{
-          padding: "10px",
-          width: "300px",
-        }}
-      />
+    <div className="search-bar">
+      <input type="text" placeholder="Search student..." />
     </div>
   );
 }
